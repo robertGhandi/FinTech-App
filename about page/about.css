@@ -1,0 +1,20 @@
+
+
+
+
+
+.footer {
+	margin-top: 30px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav-button {
+	background-color: #141414;
+	border: none;
+	padding: 20px;
+	cursor: pointer;
+}

@@ -1,70 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FinTech Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="user-info">
-        <img src="" alt="User Avatar" class="avatar">
-        <div class="transaction-notification">
-          <span>↓ £2,000</span> from <strong>Shater Tsavsar</strong>
-        </div>
-        <div class="notification-icon">
-          <img src="./images/Frame 586883.svg" alt="Notification Icon">
-        </div>
-      </div>
-      
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FinTech Dashboard</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="homePage.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="user-info">
+					<img
+						src="./images/image 1 (1).svg"
+						alt="User Avatar"
+						class="avatar"
+					/>
+					<div class="transaction-notification">
+						<span>↓ £2,000</span> from
+						<strong>Shater Tsavsar</strong>
+					</div>
+					<div class="notification-icon">
+						<img
+							src="./images/Frame 586883.svg"
+							alt="Notification Icon"
+						/>
+					</div>
+				</div>
+			</header>
 
-    <section class="balance-section">
-      <div class="balance-card">
-        <div class="balance-info">
-          <h2>Total Balance</h2>
-          <p class="balance-amount">£25,000.40</p>
-          <a href="#" class="wallet-link">My Wallet →</a>
-        </div>
-        <div class="points-info">
-          <p>179,000 Points</p>
-          <a href="#" class="rewards-link">Rewards</a>
-        </div>
-      </div>
+			<section class="balance-section">
+				<div class="balance-card">
+					<div class="balance-info">
+						<h2>Total Balance</h2>
+						<p class="balance-amount">£25,000.40</p>
+						<a href="#" class="wallet-link">My Wallet →</a>
+					</div>
+					<div class="points-info">
+						<p>179,000 Points</p>
+						<a href="#" class="rewards-link">Rewards</a>
+					</div>
+				</div>
 
-      <div class="action-buttons">
-        <button onclick="topUp()">Top up</button>
-        <button onclick="transfer()">Transfer</button>
-        <button onclick="moreOptions()">More</button>
-      </div>
-    </section>
+				<div class="action-buttons">
+					<button onclick="topUp()">Top up</button>
+					<button onclick="transfer()" id="transfer-button">
+						Transfer
+					</button>
+					<button onclick="moreOptions()">More</button>
+				</div>
+			</section>
 
-    <section class="transactions-section">
-      <div class="transactions-header">
-        <h2>Transactions</h2>
-        <a href="#" class="see-all">See All</a>
-      </div>
-      <ul class="transactions-list">
-        <li class="transaction-item">
-          <span class="transaction-name">Shater Tsavsar</span>
-          <span class="transaction-amount">£2,000</span>
-          <span class="transaction-date">10/27/2024</span>
-        </li>
-        <li class="transaction-item">
-          <span class="transaction-name">Shater Tsavsar</span>
-          <span class="transaction-amount">£2,000</span>
-          <span class="transaction-date">10/27/2024</span>
-        </li>
-        <li class="transaction-item">
-          <span class="transaction-name">Shater Tsavsar</span>
-          <span class="transaction-amount">£2,000</span>
-          <span class="transaction-date">10/27/2024</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-</body>
+			<section class="transactions-section">
+				<div class="transactions-header">
+					<h2>Transactions</h2>
+					<a href="#" class="see-all">See All</a>
+				</div>
+				<ul class="transactions-list">
+					<li class="transaction-item">
+						<span class="transaction-name">Shater Tsavsar</span>
+						<span class="transaction-amount">£2,000</span>
+						<span class="transaction-date">10/27/2024</span>
+					</li>
+					<li class="transaction-item">
+						<span class="transaction-name">Shater Tsavsar</span>
+						<span class="transaction-amount">£2,000</span>
+						<span class="transaction-date">10/27/2024</span>
+					</li>
+					<li class="transaction-item">
+						<span class="transaction-name">Shater Tsavsar</span>
+						<span class="transaction-amount">£2,000</span>
+						<span class="transaction-date">10/27/2024</span>
+					</li>
+				</ul>
+			</section>
+			<footer class="footer">
+				<nav class="navigation">
+					<button class="nav-button" onclick="reward()">
+						<img src="./images/rewards.icon.svg" />
+					</button>
+					<button class="nav-button">
+						<img src="./images/swap.icon.svg" />
+					</button>
+
+					<button class="nav-button">
+						<img src="./images/Home.icon.svg" />
+					</button>
+
+					<button class="nav-button">
+						<img src="./images/creditCard.icon.svg" />
+					</button>
+					<button class="nav-button">
+						<img src="./images/settings.svg" />
+					</button>
+				</nav>
+			</footer>
+		</div>
+	</body>
 </html>

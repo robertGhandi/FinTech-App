@@ -7,7 +7,7 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: #121212;
+	background-color: #141414;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -44,7 +44,7 @@ h1 {
 }
 
 .input-container {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 input[type="text"] {
@@ -79,21 +79,18 @@ input[type="text"]::placeholder {
 	background-color: #ddd;
 }
 
-.navbar {
+.footer {
+	margin-top: 150px;
+}
+
+.navigation {
 	display: flex;
-	justify-content: space-around;
-	margin-top: 20px;
+	justify-content: space-evenly;
 }
 
-.nav-icon {
-	font-size: 24px;
-	color: #fff;
-	background: none;
+.nav-button {
+	background-color: #141414;
 	border: none;
+	padding: 20px;
 	cursor: pointer;
-	transition: color 0.3s;
-}
-
-.nav-icon:hover {
-	color: #d1b88f;
 }

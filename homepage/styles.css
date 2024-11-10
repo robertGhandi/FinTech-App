@@ -6,8 +6,8 @@
 }
 
 body {
-	background-color: #f7f5f2;
-	color: #333;
+    background-color: #141414;
+	color: white;
 	font-size: 16px;
 }
 
@@ -144,4 +144,23 @@ body {
 .transaction-date {
 	font-size: 0.8em;
 	color: #999;
+}
+
+.footer {
+    margin-top: 50px;
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav-button {
+    background-color: #141414;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Let's Get You Started</title>
+		<link rel="stylesheet" href="onboard4.css" />
+		<script src="onboard4.js"></script>
+	</head>
+	<body>
+		<div class="image">
+			<img src="../images/Vector.svg" alt="" />
+		</div>
+		<main class="content">
+            <h1>Let's Get You Started</h1>
+            <p>
+                Enter a Referral code and we will give you 10 FundCoins just to get the ball rolling.
+            </p>
+            <input type="number" name="number" id="number" placeholder="Referral Code (Optional)">
+        </main>
+        <footer class="footer">
+            <button
+				class="button button-primary"
+				id="confirmButton"
+				onclick="Confirm()"
+			>
+				Confirm
+			</button>
+			<button
+				class="button button-secondary"
+				id="skipButton"
+				onclick="Skip()"
+			>
+				Skip
+			</button>
+        </footer>
+	</body>
+</html>

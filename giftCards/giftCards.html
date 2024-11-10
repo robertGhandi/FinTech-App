@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gift Cards</title>
+		<link rel="stylesheet" href="giftCards.css" />
+        <script src="giftCards.js"></script>
+    </head>
+	<body>
+		<header>
+            <div class="header">
+                <button class="back-button"><img src="../images/Arrow left.svg" ></button>
+                <h1>Gift Cards</h1>
+            </div>
+		</header>
+		<p>f200 gift card to popular retailers.</p>
+		<div class="inputs">
+			<input type="number" id="number">
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Email Address"
+			/>
+		</div>
+		<p id="paragraph">Gift card will be sent to the email provided as well as a receipt.</p>
+		<footer class="footer">
+			<button class="button" id="redeemButton" onclick="Redeem()">
+				Redeem
+			</button>
+            <nav class="navigation">
+                <button class="nav-button" onclick="reward()">
+                    <img src="../images/rewards.icon.svg" />
+                </button>
+                <button class="nav-button">
+                    <img src="../images/swap.icon.svg" />
+                </button>
+
+                <button class="nav-button" onclick="home()">
+                    <img src="../images/Home.icon.svg" />
+                </button>
+
+                <button class="nav-button">
+                    <img src="../images/creditCard.icon.svg" />
+                </button>
+                <button class="nav-button">
+                    <img src="../images/settings.svg" />
+                </button>
+            </nav>
+		</footer>
+	</body>
+</html>

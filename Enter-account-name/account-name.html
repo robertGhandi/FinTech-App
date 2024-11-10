@@ -3,35 +3,29 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Transfer</title>
-		<link rel="stylesheet" href="transfer.css" />
-		<script src="transfer.js"></script>
+		<title>Send to Fundify Account</title>
+		<link rel="stylesheet" href="account-name.css" />
+		<script src="account-name.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<header>
 				<button class="back-button" onclick="back()">←</button>
-				<h1>Transfer</h1>
+				<h1>Send to Fundify Account</h1>
 			</header>
 
-			<div class="transfer-options">
-				<button class="option-button" onclick="Fundify()">
-					<span class="icon"><img src="./images/Vector.svg" /></span>
-					<span>Fundify Account</span>
-				</button>
-				<button class="option-button" onclick="LocalBank()">
-					<span class="icon">F</span>
-					<span>Local Bank</span>
-				</button>
+			<div class="input-container">
+				<input
+					type="text"
+					id="username"
+					placeholder="@Usertag or Name"
+				/>
 			</div>
 
-			<p class="note">
-				Transfers to
-				<span class="highlight">Fundify Accounts</span> earns you more
-				<span class="highlight">FundCoins</span>
-			</p>
-
-			<footer class="footer">
+			<button class="confirm-button" onclick="confirmTransfer()">
+				Confirm
+			</button>
+            <footer class="footer">
 				<nav class="navigation">
 					<button class="nav-button" onclick="reward()">
 						<img src="../images/rewards.icon.svg" />
@@ -52,6 +46,8 @@
 					</button>
 				</nav>
 			</footer>
+			
 		</div>
+        
 	</body>
 </html>
