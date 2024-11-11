@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money</title>
+    <link rel="stylesheet" href="sendMoney.css">
+    <script src="sendMoney.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="previousPage()">&larr;</button>
+            <h1>Send Money</h1>
+        </header>
+        
+        <div class="recipient">
+            <p>To <span class="recipient-name">Shater Tsavsar</span></p>
+        </div>
+        
+        <div class="balance">
+            <p>Wallet Balance: <span class="balance-amount">₣25,000.40</span></p>
+        </div>
+        
+        <div class="amount-section">
+            <input type="number" class="amount-input" placeholder="₣15,000">
+            <select class="currency-select">
+                <option value="CHF">CHF</option>
+                <!-- Add more currency options if needed -->
+            </select>
+        </div>
+        
+        <p class="transfer-fee">+ ₣200 Transfer Fee</p>
+        
+        <textarea class="comment-input" placeholder="Comment (Optional)"></textarea>
+        
+        <button class="confirm-button" onclick="confirmTransaction()">Confirm</button>
+        
+        <footer class="footer">
+            <nav class="navigation">
+                <button class="nav-button" onclick="reward()">
+                    <img src="../images/rewards.icon.svg" />
+                </button>
+                <button class="nav-button">
+                    <img src="../images/swap.icon.svg" />
+                </button>
+
+                <button class="nav-button" onclick="home()">
+                    <img src="../images/Home.icon.svg" />
+                </button>
+
+                <button class="nav-button">
+                    <img src="../images/creditCard.icon.svg" />
+                </button>
+                <button class="nav-button">
+                    <img src="../images/settings.svg" />
+                </button>
+            </nav>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>

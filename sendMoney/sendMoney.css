@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .back-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.recipient, .balance, .amount-section, .transfer-fee, .comment-input, .confirm-button {
+    margin: 16px 0;
+}
+
+.recipient-name, .balance-amount {
+    font-weight: bold;
+}
+
+.amount-section {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.amount-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    flex: 1;
+    outline: none;
+}
+
+.currency-select {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.transfer-fee {
+    font-size: 14px;
+    color: #777;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    resize: none;
+    height: 50px;
+}
+
+.confirm-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 40px;
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav-button {
+    background-color: #141414;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+
+
+
+

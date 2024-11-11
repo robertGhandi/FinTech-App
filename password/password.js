@@ -29,7 +29,9 @@ function confirmPin() {
 	if (pin.length === maxPinLength) {
 		alert("PIN Confirmed: " + pin.join(""));
 		clearPin();
+        window.location.href = "../success-page/success.html"
 	} else {
 		alert("Please enter a 4-digit PIN.");
 	}
 }
+

@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, sans-serif;
+	font: georgia;
 }
 
 
@@ -11,15 +11,13 @@ body {
 	
 	margin: 0;
 	font-family: Arial, sans-serif;
-	background-color: #121212;
-	color: #333;
+	background-color: #141414;
+	color: #F4F1EB;
 }
 
 .icon {
     text-align: center;
-    padding-top: 40px;
-    
-    
+    padding-top: 40px;      
 }
 
 .container {
@@ -44,7 +42,7 @@ body {
 }
 
 .text-2 {
-    justify-content: right;
+    text-align: center;
 }
 .button {
     padding: 10px;
@@ -53,6 +51,7 @@ body {
     margin-bottom: 70px;
     padding-left: 120px;
     padding-right: 120px;
+    
 }
 .button a {
     color: black;

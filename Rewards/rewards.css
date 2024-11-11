@@ -5,7 +5,7 @@
 }
 body {
 	font-family: Arial, sans-serif;
-	background-color: #121212;
+	background-color: #141414;
 	color: #ffffff;
 	display: flex;
 	flex-direction: column;
@@ -14,14 +14,23 @@ body {
 }
 .header {
 	font-size: 24px;
-	font-weight: bold;
+	
 	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+	width: 95%;
 	max-width: 400px;
 }
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 14px;
+}
+
 .header .balance {
 	font-size: 20px;
 	display: flex;
@@ -76,22 +85,22 @@ body {
 .redeem-button:hover {
 	background-color: #e0e0e0;
 }
-/* Bottom navigation styling */
-.bottom-nav {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	max-width: 400px;
-	display: flex;
-	justify-content: space-around;
-	background-color: #1e1e1e;
-	padding: 10px 0;
+
+.footer {
+    margin-top: 50px;
+    
 }
-.bottom-nav img {
-	width: 24px;
-	opacity: 0.8;
-	transition: opacity 0.3s;
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    
 }
-.bottom-nav img:hover {
-	opacity: 1;
+
+.nav-button {
+    background-color: #141414;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    
 }

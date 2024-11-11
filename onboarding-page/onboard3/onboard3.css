@@ -8,13 +8,19 @@ body {
     
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
     background-color: #1a1a1a;
     color: #fff;
 }
 
+.icon {
+    text-align: center;
+    padding-top: 40px;
+        
+}
+
 .image {
-    padding-top: 70px;
+    padding-top: 10px;
     
     display: flex;
     
