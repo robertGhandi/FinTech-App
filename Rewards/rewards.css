@@ -31,11 +31,18 @@ p {
     font-size: 14px;
 }
 
+#notification-btn {
+    background-color: #141414;
+    border: none;
+    cursor: pointer;
+}
+
 .header .balance {
 	font-size: 20px;
 	display: flex;
 	align-items: center;
 	gap: 5px;
+
 }
 .header .balance img {
 	width: 20px;

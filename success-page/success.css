@@ -1,54 +1,111 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #141414;
-	color: #F4F1EB;
-	font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.confirmation-container {
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
 }
 
 header {
     display: flex;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.close-button {
-    background-color: #141414;
-    color: #F4F1EB;
+h1 {
+    font-size: 1.5em;
+}
+
+.close-btn {
+    background: none;
     border: none;
+    color: #bbb;
+    font-size: 1em;
     cursor: pointer;
 }
 
-.reward-points {
+.coin-bonus {
+    font-size: 1.5em;
+    margin: 10px 0;
+    
+}
+
+.transaction-details {
+    text-align: left;
+    margin: 20px 0;
+}
+
+#receiver, #amount, #comment, #date, #transaction {
     display: flex;
-    justify-content: center;
-    padding-right: 230px;
-    margin-top: 20px;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
 
-.footer {
-    margin-top: 100px;
+
+.transaction-details p {
+    margin: 5px 0;
+}
+
+#transaction-code {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: #FFD700;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.print-btn {
+    background-color: #eee;
+    color: #111;
     
+    
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+.footer {
+	margin-top: 30px;
+	
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    
+	display: flex;
+	justify-content: space-between;
 }
 
 .nav-button {
-    background-color: #141414;
-    border: none;
-    padding: 20px;
-    cursor: pointer;
-    
+	background-color: #141414;
+	border: none;
+	padding: 20px;
+	cursor: pointer;
 }

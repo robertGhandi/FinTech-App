@@ -8,54 +8,48 @@
     <script src="success.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Money Sent!</h1>
-        <button class="close-button" onclick="close()">close</button>
-    </header>
-    <div class="reward-points">
-        +<img src="../images/rewards.icon.svg">20
+    <div class="confirmation-container">
+        <header>
+            <h1>Money Sent!</h1>
+            <button class="close-btn" onclick="closeButton()">Close</button>
+        </header>
+        <div class="coin-bonus">+ <span class="coin"><img src="../images/rewards.icon.svg"></span> 20</div>
+        
+        <div class="transaction-details">
+            <p id="receiver"><strong>Receiver:</strong> Shater Tsavsar</p>
+            <p id="amount"><strong>Amount:</strong> ₣15,000</p>
+            <p id="comment"><strong>Comment:</strong> Test</p>
+            <p id="date"><strong>Date:</strong> 03/02/2024</p>
+            <p id="transaction">
+                <strong>Transaction Code:</strong>
+                <span id="transaction-code">2PR yJRH18JI i1NNuwwb mZVJ</span>
+                <button class="copy-btn" id="copy-btn" onclick="copy()"><img src="../images/copy.icon.svg" ></button>
+            </p>
+        </div>
+        
+        <button class="print-btn" onclick="printReceipt()">Print Receipt</button>
+        <footer class="footer">
+            <nav class="navigation">
+                <button class="nav-button" onclick="reward()">
+                    <img src="../images/rewards.icon.svg" />
+                </button>
+                <button class="nav-button">
+                    <img src="../images/swap.icon.svg" />
+                </button>
+
+                <button class="nav-button">
+                    <img src="../images/Home.icon.svg" />
+                </button>
+
+                <button class="nav-button">
+                    <img src="../images/creditCard.icon.svg" />
+                </button>
+                <button class="nav-button">
+                    <img src="../images/settings.svg" />
+                </button>
+            </nav>
+        </footer>
     </div>
-    <section class="transaction-info">
-        <div class="receiver">
-            Receiver
-            Shater Tsavsar
-        </div>
-        <div class="amount">
-            Amount
-            F 15,000
-        </div>
-        <div class="comment">
-            Comment
-            Test
-        </div>
-        <div class="date">
-            Date
-            03/02/2024
-        </div>
-        <div class="transaction-code">
-            Transaction Code
-        </div>
-    </section>
-    <footer class="footer">
-        <nav class="navigation">
-            <button class="nav-button" onclick="reward()">
-                <img src="../images/rewards.icon.svg" />
-            </button>
-            <button class="nav-button">
-                <img src="../images/swap.icon.svg" />
-            </button>
-
-            <button class="nav-button" onclick="home()">
-                <img src="../images/Home.icon.svg" />
-            </button>
-
-            <button class="nav-button">
-                <img src="../images/creditCard.icon.svg" />
-            </button>
-            <button class="nav-button">
-                <img src="../images/settings.svg" />
-            </button>
-        </nav>
-    </footer>
+   
 </body>
 </html>
