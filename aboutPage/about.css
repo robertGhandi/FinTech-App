@@ -1,40 +1,87 @@
 * {
-	margin: 5px;
-	padding: 0px;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	background-color: #141414;
-	color: #fff;
-	
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.info-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
 }
 
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
+h1 {
+    font-size: 1.5em;
+}
 
-.back-button {
-    cursor: pointer;
+.back-btn {
+    background: none;
     border: none;
-    background-color: #141414;
-     
+    color: #bbb;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.coin {
+    font-size: 1.5em;
+    color: #FFD700;
+    margin-top: 10px;
+}
+
+.rewards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reward-item {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px dashed #555;
+}
+
+.reward-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reward-coin {
+    font-size: 15px;
     
 }
 
-p {
-    width: auto;
+.coin.icon {
+    width: 100px;
+    height: px;
 }
-
-.item {
-    background-color: dimgrey;
-}
-
 
 .footer {
 	margin-top: 30px;
